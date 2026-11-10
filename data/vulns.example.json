@@ -1,0 +1,46 @@
+{
+  "ssh": [
+    {
+      "version_pattern": "OpenSSH_([0-7]\\.[0-9]|8\\.[0-4])",
+      "cve": "CVE-2020-15778",
+      "severity": "HIGH",
+      "description": "Command injection in scp in OpenSSH allows remote attackers to run commands via crafted filenames."
+    },
+    {
+      "version_pattern": "OpenSSH_8\\.5p1|OpenSSH_9\\.[0-7]p1",
+      "cve": "CVE-2024-6387",
+      "severity": "CRITICAL",
+      "description": "regreSSHion: remote code execution in sshd due to a signal handler race condition."
+    }
+  ],
+  "ftp": [
+    {
+      "version_pattern": "vsFTPd 2\\.3\\.4",
+      "cve": "CVE-2011-2523",
+      "severity": "CRITICAL",
+      "description": "vsftpd 2.3.4 contains a backdoor triggered by a smiley face ':)' in the username."
+    }
+  ],
+  "http": [
+    {
+      "version_pattern": "Apache/2\\.4\\.(49|50)\\b",
+      "cve": "CVE-2021-41773",
+      "severity": "HIGH",
+      "description": "Path traversal and file disclosure in Apache HTTP Server 2.4.49 and 2.4.50."
+    },
+    {
+      "version_pattern": "nginx/1\\.1[0-9]\\.",
+      "cve": "CVE-2017-7529",
+      "severity": "MEDIUM",
+      "description": "Integer overflow in the nginx range filter module allows information disclosure."
+    }
+  ],
+  "smb": [
+    {
+      "version_pattern": "Windows",
+      "cve": "CVE-2017-0144",
+      "severity": "CRITICAL",
+      "description": "EternalBlue: remote code execution in Microsoft SMBv1."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valkyrieguard"
+dynamic = ["version"]
+description = "Windows system audit + network vulnerability scanner with a Tk GUI"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+valkyrieguard = "valkyrieguard.cli:main"
+
+[project.gui-scripts]
+valkyrieguard-gui = "valkyrieguard.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "valkyrieguard.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["valkyrieguard*"]
+
+[tool.setuptools.package-data]
+valkyrieguard = ["resources/*.ps1"]
