@@ -17,7 +17,7 @@ Pick **one** way. All of them end with the ValkyrieGuard window opening.
 
 **A. Download from GitHub (git)**
 ```
-git clone https://github.com/<your-username>/ValkyrieGuard.git
+git clone https://github.com/vxt90s/ValkyrieGuard.git
 cd ValkyrieGuard
 python main.py
 ```
